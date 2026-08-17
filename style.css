@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  background-color: #05299e;
+  color: #0a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Force buttons and inputs to inherit the font */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 20px;
+  color: #0a1a1a;
+  border-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e4ae3;
+  border-radius: 8px;
+}
+
+.main.container {
+  flex-direction: column;
+  width: 50%;
+}
+
+.button.container {
+  margin: 20px;
+}
+
+.btn {
+  background-color: #947bd3;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  /* Smooth transition for hover effects */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn.special {
+  background-color: #f0a7a0;
+}
+
+.numRow,
+.operatorRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.display {
+  margin: 30px;
+  background-color: #02123d;
+  color: #947bd3;
+  font-variant-numeric: tabular-nums;
+  padding: 20px;
+  text-align: right;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 100%;
+}
