@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 /* Force buttons and inputs to inherit the font */
@@ -79,6 +80,7 @@ textarea {
 
 .display {
   margin: 30px;
+  overflow: hidden;
   background-color: #02123d;
   color: #947bd3;
   font-variant-numeric: tabular-nums;
@@ -87,4 +89,9 @@ textarea {
   border-radius: 8px;
   max-width: 520px;
   width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 24px;
+  line-height: 1.2;
+  height: 64px;
 }
